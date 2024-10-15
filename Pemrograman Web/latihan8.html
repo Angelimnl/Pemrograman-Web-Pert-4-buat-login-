@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 8</title>
+</head>
+<body>
+    <form method="get">
+        <table border="3">
+        <tr>
+            <td><label for="nama">Nama Lengkap</label></td>
+            <td><input type="text" name="nama" id="nama" placeholder="Isi Nama Lengkap" size="42" maxlength="10" required></td>
+            <!-- maxlength=untuk maksimal panjang kata nya,
+             required=artinya wajib diisi -->
+        </tr>
+        <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type="email" id="email" placeholder="Masukan E-Mail" size="42"></td>
+        </tr>
+        <tr>
+            <td><label for="tgl">Tempat, Tanggal Lahir</label></td>
+            <td><input type="text" size="25"><input type="date" name="tgl" id="tgl"></td>
+        </tr>
+        <tr>
+            <td><label for="jk">Jenis Kelamin</label></td>
+            <td><input type="radio" name="jkel" id="jk" value="Pria">Pria
+            <input type="radio" name="jkel" id="jk" value="Wanita">Wanita</td>
+        </tr>
+        <tr>[]
+            <td><label for="hobby">Hobby</label></td>
+            <td>
+                <input type="checkbox" name="Hobby" value="Ngoding">Ngoding
+                <input type="checkbox" name="hb2" value="Swimming">Swimming
+                <input type="checkbox" name="hb3" value="Sleeping">Sleeping
+                <input type="checkbox" name="hb4" value="Gaming">Gaming
+            </td>
+        </tr>
+        <tr>
+            <td><label for="foto">Upload Foto</label></td>
+            <td><input type="file" name="" id="foto" accept=".jpeg, .jpg, .png" multiple></td>
+            <!-- multiple=agar jumlah foto dapat diklik lebih dari 1,
+             accept=untuk tipe file nya-->
+        </tr>
+        <tr>
+            <td><label for="tlp">Nomor Tlp / HP</label></td>
+            <td><input type="tel" name="tlp" id="tlp" size="42" pattern="[0-9]{12}"></td>  
+              <!-- yang diinput nomornya dari 0 sampai 9 dengan max 12 nomor -->
+        </tr>
+        <tr>
+            <td><button type="sumbit">Sumbit</button></td>
+            <td><button type="reset">Reset</button></td>
+        </tr>
+    </table>
+    </form>
+    <video src=""></video>
+    <audio src=""></audio>
+</body>
+</html>
